@@ -18,6 +18,8 @@
 		
 		include("./component/mansory_body.php");
 		
+		include("./component/nav_bar_bottom.php");
+		
 	?>
 </body>
 </html>

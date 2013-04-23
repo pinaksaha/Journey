@@ -4,7 +4,7 @@
 		<div class="span10 offset2">
 			
 			<div class="navbar navbar-inverse navbar-fixed-bottom" style="position: absolute;">
-					<div class="navbar-inner">
+					<div class="navbar-inner navbar-fixed-bottom">
 						
 						<ul class="nav pull-left">
 							<li> 

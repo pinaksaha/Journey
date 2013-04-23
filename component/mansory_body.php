@@ -28,10 +28,12 @@
 									print "<div class='modal-body'>";
 										
 										 print "<img src='".$contents[photos][$i][photo_file_url]."' width='".$contents[photos][$i][latitude]."px' />";
-										 print "<img src='http://maps.googleapis.com/maps/api/staticmap?center=".$contents[photos][$i][longitude].",".$contents[photos][$i][latitude]."&zoom=5&size=250x250&sensor=false'>";
+										 
 									print "</div>";
 									
 									print "<div class='modal-footer'>";
+
+
 										print "<p> latitude: ".$contents[photos][$i][latitude]."</p>";
 										print "<p> longitude: ".$contents[photos][$i][longitude]."</p>";
 									print "</div>";

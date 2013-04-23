@@ -1,10 +1,10 @@
-
+<div class="container">
 	<div class="row">
 	
 		<div class="span10 offset2">
 			
-			<div class="navbar navbar-inverse navbar-fixed-top" style="position: absolute;">
-					<div class="navbar-inner">
+			<div class="navbar navbar-inverse" style="position: absolute;">
+					<div class="navbar-inner navbar-fixed-top">
 						<ul class="nav pull-left">
 							<li>
 								<a class="brand" href="./index.php">Journey</a>
@@ -25,3 +25,4 @@
 		</div>
 		
 	</div>
+</div>
