@@ -13,4 +13,4 @@
 											 
 
 
-<script src="http://cdn.leafletjs.com/leaflet-0.5/leaflet.js"></script>
+<script type="text/javascript" src="./fancy_box/js/jquery.fancybox.js?v=2.1.4"></script>
