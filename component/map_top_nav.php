@@ -12,7 +12,7 @@
 						</ul>
 						<ul class="nav pull-right">
 							<li> 
-								<a href="./view/map.php" title="Map View"><i class="icon-map-marker"></i></a>
+								<a href="../index.php" title="Tile View"><i class="icon-th"></i></a>
 							</li>
 						</ul>
 						
