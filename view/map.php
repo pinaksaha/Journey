@@ -76,7 +76,7 @@
 		{
 			print "var marker".$i."= L.marker([".$contents[photos][$i][latitude].",".$contents[photos][$i][longitude]."]);";
 			print "\n";
-			$temp ="";
+			$temp ="";	
 			$title = str_replace ( "'",$contents[photos][$i][photo_title],$tmp);
 			print "marker".$i.".bindPopup('<h4>".$contents[photos][$i][photo_title]."</h4>').openPopup();";
 		}
