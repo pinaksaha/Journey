@@ -1,0 +1,91 @@
+
+            body {
+                padding-top: 60px;
+                padding-bottom: 40px;
+                background-color: #BDC3C7 !important;
+
+            }
+            #content1{
+                background-color: background: #fbfbfb; /* Old browsers */
+                        background: -moz-linear-gradient(top,  #f9f9f9 0%, #f3f3f3 100%); /* FF3.6+ */
+                        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9f9f9), color-stop(100%,#f3f3f3)); /* Chrome,Safari4+ */
+                        background: -webkit-linear-gradient(top,  #f9f9f9 0%,#f3f3f3 100%); /* Chrome10+,Safari5.1+ */
+                        background: -o-linear-gradient(top,  #f9f9f9 0%,#f3f3f3 100%); /* Opera 11.10+ */
+                        background: -ms-linear-gradient(top,  #f9f9f9 0%,#f3f3f3 100%); /* IE10+ */
+                        background: linear-gradient(to bottom,  #f9f9f9 0%,#f3f3f3 100%); /* W3C */
+                        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#f3f3f3',GradientType=0 ); /* IE6-9 */
+                        ;
+                width: 250px;
+                float: left;
+                border-radius: 5px;
+                margin: 10px;
+            }
+
+            @media (max-width: 700px) {
+                #logo{
+                    margin-left: 15%;
+                }
+                #navback{
+                    display: none;
+                }
+
+            }
+
+            .bodyImg{
+                border-radius: 5px;
+            }
+
+          .box {
+                -webkit-transition: -webkit-transform 0.2s;
+                -webkit-transition: -webkit-transform 0.2s;
+                -webkit-transition: -webkit-transform 0.2s;
+                -webkit-transition: -webkit-transform 0.2s;
+                transition: transform 0.3s;
+
+                box-shadow: 5px 5px 5px rgba(0,0,0,0.2)
+            }
+
+            .box:hover {
+                -webkit-transform: scale(1.05);
+                -moz-transform: scale(1.05);
+                -o-transform: scale(1.05);
+                -ms-transform: scale(1.05);
+                transform: scale(1.05);
+
+                
+            }
+            
+            .imgDescription{
+                margin: 5px;
+            }
+            
+            .box {
+	            background: #fbfbfb;
+	            margin: 10px;
+            }
+	        .item
+	        {
+		      background:  #fbfbfb; 
+		      margin: 25px; 
+	        }
+	        
+	        .item img
+	        {
+		      background:  #fbfbfb;   
+		      text-align: center;
+	        }
+	        .btn
+	        {
+		        background:  #fbfbfb;  
+		        padding-top: 10px;
+	        }
+	        .btn:hover, .btn:focus
+	        {
+		        background: #fbfbfb;
+	        }
+	        a,a:visited,a:hover,h4
+	        {
+	        	margin-top: 10px;	
+		        color: black;
+		        text-decoration: none;
+	        }

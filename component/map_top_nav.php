@@ -7,7 +7,7 @@
 					<div class="navbar-inner navbar-fixed-top">
 						<ul class="nav pull-left">
 							<li>
-								<a class="brand" href="./index.php">Journey</a>
+								<a class="brand" href="../index.php">Journey</a>
 							</li>
 						</ul>
 						<ul class="nav pull-right">

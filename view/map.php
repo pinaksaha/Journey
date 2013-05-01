@@ -57,7 +57,7 @@
 </html>
 <script src="http://cdn.leafletjs.com/leaflet-0.5/leaflet.js"></script>
 <script>
-		var map = L.map('map1').setView([40.6944, -73.9906], 13);
+		var map = L.map('map1').setView([9.29464743756, 1.7599265], 13);
 		
 </script>
 
@@ -70,22 +70,30 @@
 	//$contents[photos][$i]
 	$contents = file_get_contents("../lib/pics.json");
 	$contents = json_decode($contents,true);
-	print "<script>";
-	
-		for($i=0;$i<count($contents[photos]);$i++)
-		{
-			print "var marker".$i."= L.marker([".$contents[photos][$i][latitude].",".$contents[photos][$i][longitude]."]);";
-			print "\n";
-			$temp ="";	
-			$title = str_replace ( "'",$contents[photos][$i][photo_title],$tmp);
-			print "marker".$i.".bindPopup('<h4>".$contents[photos][$i][photo_title]."</h4>').openPopup();";
-		}
-	print "</script>";
 	
 ?>
 
 
+<script>
+	var myLines = [{
+	    "type": "LineString",
+	    "coordinates": [[-100, 40], [-105, 45], [-110, 55]]
+	}, {
+	    "type": "LineString",
+	    "coordinates": [[-105, 40], [-110, 45], [-115, 55]]
+	}];
+	
+	var myStyle = {
+	    "color": "#ff7800",
+	    "weight": 5,
+	    "opacity": 0.65
+	};
+	
+	L.geoJson(myLines, {
+	    style: myStyle
+	}).addTo(map);
 
+</script>
 
 
 <script>	
