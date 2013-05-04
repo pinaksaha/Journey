@@ -31,7 +31,9 @@
 						}
 
 
-
+						
+						
+						
 						$num = 1;
 						for($i=$min; $i < $max;$i++)
 						{
@@ -39,20 +41,40 @@
 							{
 								$num = 1;
 							}
-
+							//$user_profile_link = $contents[photos][$i][owner_url];
+							
 							print "<div class='item box col'>";
 										print "<a id='single_image' href='".$contents[photos][$i][photo_file_url]."'>";				
 									    print "<img src='".$contents[photos][$i][photo_file_url]."' class='bodyImg col";
 										print  $num;
 										print " mansory-brick' target='_blank' id=".$i."/>";
 										print "</a>";
+										
+									print "<div class='pagination pagination-centered'>";
 									
-									print "<a href='".$contents[photos][$i][owner_url]."'>"."<h4>By: ".$contents[photos][$i][owner_name]."</h4></a>";
-									print "<h5>Latitude:".$contents[photos][$i][latitude]."</h5>";
-									print "<h5>Longitude:".$contents[photos][$i][longitude]."</h5>";								
+									print " <ul>";	
+									
+									print  "<li>"."<a href='".$contents[photos][$i][owner_url]."'>"."<i class='icon-user'></i></a></li>";
+									
+									print "<li><a id='inline' href='#data".$i;
+									print "'><i class='icon-screenshot'></i>";
+									print "</a></li>";
+									
+									print "<li><a href='#'><i class = 'icon-share'></i></a></li>";
+									print  "</ul>";
+									print 	"</div>";				
 							
 							print "</div>";	
+							
+							print "<div class='item' style='display:none'><div class='item' id='data".$i."'>";
+							print "<img  class='item' src='http://maps.googleapis.com/maps/api/staticmap?center=".$contents[photos][$i][latitude].','.$contents[photos][$i][longitude]."&zoom=11&size=200x200&sensor=false";
+							print "'>";
+							print "</div></div>";
 
+							
+							
+							
+														
 
 							$num = $num +1;
 						}
