@@ -60,7 +60,9 @@
 									print "'><i class='icon-screenshot'></i>";
 									print "</a></li>";
 									
-									print "<li><a href='#'><i class = 'icon-share'></i></a></li>";
+									print "<li><a id='inline' href='#share".$i."'>";
+									print "<i class = 'icon-share'></i></a>";
+									print "</li>";
 									print  "</ul>";
 									print 	"</div>";				
 							
@@ -72,6 +74,16 @@
 							print "</div></div>";
 
 							
+							print "<div class='item' style='display:none'><div class='item' id='share".$i."'>";
+							print "<div id=fb-root></div>";
+							print "<div class='fb-like' data-href='".$contents[photos][$i][photo_file_url]."' data-send='false' data-width='100' data-show-faces='false' data-font='segoe ui'></div>";
+							
+							print "<a href='https://twitter.com/share' class='twitter-share-button' data-url='".$contents[photos][$i][photo_file_url]."'>Tweet</a>";
+							
+							
+							
+							print "</div>";
+							print "</div>";
 							
 							
 														
